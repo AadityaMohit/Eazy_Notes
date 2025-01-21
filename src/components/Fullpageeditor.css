@@ -1,0 +1,112 @@
+/* Fullpageeditor.css */
+
+/* General Editor Styling */
+.fullpage-editor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Close Button */
+.fullpage-editor .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.fullpage-editor .close-button:hover {
+  background-color: #c82333;
+}
+
+/* Editor Header */
+.fullpage-editor h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.fullpage-editor p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/* Toolbar Styling */
+.fullpage-editor .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.fullpage-editor .toolbar button {
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fullpage-editor .toolbar button.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.fullpage-editor .toolbar button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* Editor Content Styling */
+.fullpage-editor .editor-content {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fullpage-editor {
+    padding: 15px;
+  }
+
+  .fullpage-editor h1 {
+    font-size: 20px;
+  }
+
+  .fullpage-editor .toolbar {
+    gap: 5px;
+  }
+
+  .fullpage-editor .toolbar button {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
